@@ -1,5 +1,6 @@
 {
   "C_Cpp.intelliSenseEngine": "default",
+  "idf.buildPath": "${workspaceFolder}/build",
   "idf.extensionActivationMode": "always",
   "cmake.configureOnOpen": false,
   "cmake.configureOnEdit": false,
@@ -27,5 +28,11 @@
   "idf.customExtraVars": {
     "IDF_TARGET": "esp32s3"
   },
-  "idf.flashType": "UART"
+  "idf.flashType": "UART",
+  "clangd.path": "D:\\Espressif\\tools\\esp-clangd\\esp-21.1.3_20260408\\esp-clangd\\bin\\clangd.exe",
+  "clangd.arguments": [
+    "--background-index",
+    "--query-driver=**",
+    "--compile-commands-dir=d:\\DOAN_ROBOT_IDF\\ROBOT_DIEUKHIENVITRI/build"
+  ]
 }
