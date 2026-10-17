@@ -1,2 +1,29 @@
-idf_component_register(SRCS "main.c"
-                    INCLUDE_DIRS ".")
+idf_component_register(
+    SRCS
+        "main.c"
+        "modules/cau_hinh/robot_config.c"
+        "modules/cau_hinh/robot_positions.c"
+        "modules/phan_cung/truc_buoc.c"
+        "modules/phan_cung/cong_tac_home.c"
+        "modules/phan_cung/bo_phat_xung.c"
+        "modules/tinh_toan/quy_doi_goc_xung.c"
+        "modules/tinh_toan/profile_toc_do.c"
+        "modules/tinh_toan/dong_bo_ba_truc.c"
+        "modules/dieu_khien/tim_home.c"
+        "modules/dieu_khien/dieu_khien_vi_tri.c"
+        "modules/he_thong/may_trang_thai.c"
+        "modules/he_thong/quan_ly_loi.c"
+        "modules/he_thong/kiem_tra_an_toan.c"
+        "modules/giao_tiep/lenh_serial.c"
+        "modules/ung_dung/trinh_dieu_khien_robot.c"
+    INCLUDE_DIRS
+        "."
+        "modules/dung_chung"
+        "modules/cau_hinh"
+        "modules/phan_cung"
+        "modules/tinh_toan"
+        "modules/dieu_khien"
+        "modules/he_thong"
+        "modules/giao_tiep"
+        "modules/ung_dung"
+)
